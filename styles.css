@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    margin: 0;
+}
+.main-section{
+    width: 225px;
+    height: 330px;
+    position: relative;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    overflow: hidden;
+}
+.main-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* vertical-align: bottom; */
+    border-radius: 15px;
+    background-color: black;
+}
+.save-btn {
+    background-color: red;
+    border-radius: 20px;
+    padding: 0.5em;
+    position: absolute;
+    top: -2.5em;
+    right: 1em;
+    color: white;
+    transition: all 0.4s linear;
+}
+.btm-icon-wrapper{
+    position: absolute;
+    bottom: -3.5em;
+    left:0.5em;
+    right:0.5em;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s linear;
+}
+.width-wrap{
+    width: 58.33%;
+    max-width: 100%;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.width-wrap2{
+    width: 20%;
+    max-width: 100%;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.img-info-tab{
+    display: flex;
+    background-color: #eaeaeb;
+    border-radius: 20px;
+    padding: 8px 10px;
+}
+.img-info-tab i {
+    margin-right: 4px;
+}
+.img-info-tab div {
+    text-overflow: ellipsis;
+}
+.upload-icon{
+    border-radius: 50%;
+    background-color: #eaeaeb;
+    /* opacity: 0.6; */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload-icon i {
+    position: absolute;
+}
+.main-section:hover .save-btn{
+    transform:translateY(3.5em);
+}
+.main-section:hover .btm-icon-wrapper{
+    transform:translateY(-4.5em);
+}
